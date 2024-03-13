@@ -38,7 +38,10 @@ jobs:
       # install your root project, if required
       #----------------------------------------------
       - name: Instalar o projeto, se necessário
-        run: pip install -r requirements.txt
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
       #----------------------------------------------
       #              run test suite
       #----------------------------------------------
