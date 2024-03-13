@@ -4,8 +4,7 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
-
-    steps:
+      steps:
       - name: Baixar o repositorio
         uses: actions/checkout@v4
 
